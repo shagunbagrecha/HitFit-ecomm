@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN -->
+  <link rel="stylesheet" href="https://vivid-ui.netlify.app/css/index.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/index.css">
+  <title>HitFit Store</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav  d-flex flex-justify-between flex-items-center p-1">
+      <h1 class="brandname h3">HitFit</h1>
+      <div class="nav-items d-flex flex-items-center">
+        <div class="search d-flex">
+          <input type="text" class="search-box" placeholder="Search..">
+          <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <a href="./pages/cart.html">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fs-md"></i>
+            <span class="badge badge-icon badge-icon-atc">3</span>
+          </div>
+        </a>
+        <a href="./pages/wishlist.html">
+          <div class="badge-container">
+            <i class="fas fa-heart icon fs-md"></i>
+            <span class="badge badge-icon badge-icon-notification">3</span>
+          </div>
+        </a>
+        <a href="./pages/profile.html">
+          <div class="badge-container">
+            <i class="fa-solid fa-user icon fs-md"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner section -->
+  <header class="banner-section d-flex flex-flex-justify-center flex-items-center">
+    <div class="content">
+      <p class="sub-heading">One Stop Destination for all the Fitness Freaks !</p>
+      <a href="" class="btn btn-link d-inline-block">Explore</a>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <h1 class="m-3 text-center h2">Categories</h1>
+  <div class="d-grid categories-container">
+    <div class="category-container">
+      <img class="img-fluid" src="/assets/card-img.jpg" alt="Proteins" />
+      <div class="overlay-container">Proteins</div>
+    </div>
+
+    <div class="category-container">
+      <img class="img-fluid" src="/assets/carl-barcelo.jpg" alt="Yoga" />
+      <div class="overlay-container">Yoga</div>
+    </div>
+
+    <div class="category-container">
+      <img class="img-fluid" src="/assets/card-img.jpg" alt="equipments" />
+      <div class="overlay-container">Equipments</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Cards -->
+  <h1 class="m-3 text-center h2">Best Sellers</h1>
+  <section class="card-container d-flex container-center-xl flex-justify-center">
+    <div class="card text-center m-2">
+      <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">Dummy text</h2>
+        <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+          exhausting...
+        </p>
+        <a href="#" class="btn text-center mt-0">Buy Now</a>
+      </div>
+    </div>
+    <div class="card text-center m-2">
+      <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">Dummy text</h2>
+        <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+          exhausting...
+        </p>
+        <a href="#" class="btn text-center mt-0">Buy Now</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
