@@ -1,0 +1,88 @@
+@import './nav.css';
+
+:root{
+  --primary-color: #e99550;
+  --secondary-color: #383838;
+}
+
+body {
+  background: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner */
+.banner-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url(../assets/carl-barcelo.jpg);
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.banner-section .sub-heading {
+  margin: auto;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.banner-section .btn {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  align-self: center;
+  background: var(--secondary-color);
+  font-size: 1.3rem;
+}
+
+/* card */
+
+.card .btn {
+  background-color: var(--secondary-color);
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.category-container {
+  position: relative;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: var(--fw-bolder);
+}
+
+@media screen and (max-width:768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-container {
+    font-size: 1.5rem;
+  }
+}
