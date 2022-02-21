@@ -1,5 +1,10 @@
 @import './nav.css';
 
+:root{
+  --primary-color: #e99550;
+  --secondary-color: #383838;
+}
+
 body {
   background: whitesmoke;
 }
@@ -29,23 +34,23 @@ body {
 .banner-section .sub-heading {
   margin: auto;
   text-align: center;
-  color: #e99550;
+  color: var(--primary-color);
   font-size: 3rem;
   font-weight: 900;
 }
 
 .banner-section .btn {
-  color: #e99550;
-  border: 2px solid #e99550;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   align-self: center;
-  background: #383838;
+  background: var(--secondary-color);
   font-size: 1.3rem;
 }
 
 /* card */
 
 .card .btn {
-  background-color: #383838;
+  background-color: var(--secondary-color);
 }
 
 .categories-container {
