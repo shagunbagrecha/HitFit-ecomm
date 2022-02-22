@@ -1,0 +1,65 @@
+@import '/css/nav.css';
+
+:root{
+	--secondary-color:#393939;
+}
+
+.cart-page{
+	margin: 80px auto;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th{
+	text-align: left;
+	padding: 0.3rem;
+	color: var(--clr-white);
+	background: var(--secondary-color);
+	font-weight: var(--fw-normal);
+}
+
+td{
+	padding: 0.7rem 0.3rem;
+	color: var(--secondary-color);
+}
+
+td input{
+	padding: 0.3rem;
+	width: 40px;
+	height: 30px;
+}
+
+td a{
+	color: var(--clr-red);
+	font-size: 12px;
+}
+
+td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 0.7rem;
+}
+
+.total-price{
+	justify-content: flex-end;
+}
+
+.total-price table{
+	border-top: 3px solid var(--secondary-color);
+	width: 100%;
+	max-width: 400px;
+}
+
+td:last-child, th:last-child{
+	text-align: right;
+}
+
+@media screen and (max-width:600px){
+	.cart-info p{
+		display: none;
+	}
+
+}
