@@ -1,0 +1,75 @@
+@import './nav.css';
+
+/* Logout */
+
+.logout-container{
+	min-height: 70vh;
+	max-width: 100vw;
+}
+
+.card{
+	box-shadow: var(--box-shadow-bolder);
+	max-width: 22rem;
+}
+
+.card i{
+	color: var(--clr-green-dark);
+}
+
+.card .logout-msg {
+	margin-top: 2rem;
+	font-weight: var(--fw-bold);
+}
+
+.card .home-link{
+	text-decoration: none;
+	color: var(--clr-green-dark);
+}
+
+.card .home-link:hover{
+	font-weight: var(--fw-bolder);
+	font-size:1.5rem;
+}
+
+/* Login */
+
+.input input{
+	border: 2px solid var(--clr-gray-dark);
+}
+
+.btn{
+	background: var(--clr-gray-dark);
+	padding: 0.5rem 1.5rem;
+}
+
+.btn:hover{
+	color: var(--clr-gray-dark);
+	background-color: transparent;
+	border: 2px solid var(--clr-gray-dark);
+}
+
+.form-group a{
+	text-decoration: none;
+}
+
+.forgot-pwd-link{
+	color: var(--clr-red-dark);
+}
+
+.forgot-pwd-link:hover, .signup-link:hover, .login-link:hover{
+	font-weight: var(--fw-bolder);
+}
+
+.signup-link, .login-link{
+	color: var(--clr-green-dark);
+}
+
+.login-link:hover p{
+	font-size: var(--fs-md);
+}
+
+/* Login and sign-up */
+
+.heading, .input label, p{
+	color: var(--clr-gray-dark);
+}
