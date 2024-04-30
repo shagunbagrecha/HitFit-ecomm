@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://vivid-ui.netlify.app/css/index.css" />
+  <link rel="stylesheet" href="/css/productListing.css">
+  <title>Products | HitFit</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav  d-flex flex-justify-between flex-items-center p-1">
+      <h1 class="brandname h3">HitFit</h1>
+      <div class="nav-items d-flex flex-items-center">
+        <div class="search d-flex">
+          <input type="text" class="search-box" placeholder="Search..">
+          <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <a href="./pages/cart.html">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fs-md"></i>
+            <span class="badge badge-icon badge-icon-atc">3</span>
+          </div>
+        </a>
+        <a href="./pages/wishlist.html">
+          <div class="badge-container">
+            <i class="fas fa-heart icon fs-md"></i>
+            <span class="badge badge-icon badge-icon-notification">3</span>
+          </div>
+        </a>
+        <a href="./pages/profile.html">
+          <div class="badge-container">
+            <i class="fa-solid fa-user icon fs-md"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="product-container d-grid">
+    <!-- sidebar -->
+    <aside class="sidebar p-2">
+      <div class="filter-clear d-flex flex-justify-between flex-items-center">
+        <h1 class="">Filters</h1>
+        <a class="clear-link d-flex flex-items-center">Clear</a>
+      </div>
+
+      <div class="filter-container">
+        <div class="filter-title">Price</div>
+        <div class="filter-value">
+          <div class="price">
+            <span>&#8377; 200</span>
+            <span> &#8377; 20000 </span>
+          </div>
+          <input type="range" min="500" max="5000" value="2500" />
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <div class="filter-title">Category</div>
+        <div class="filter-value d-flex flex-dir-col">
+          <label><input type="checkbox" checked /> Wearables</label>
+          <label><input type="checkbox" /> Proteins</label>
+          <label><input type="checkbox" /> Equipments</label>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <div class="filter-title">Ratings</div>
+        <div class="filter-value d-flex flex-dir-col">
+          <label><input type="radio" name="rating" checked /> 4 stars &
+            above</label>
+          <label><input type="radio" name="rating" /> 3 stars & above</label>
+          <label><input type="radio" name="rating" /> 2 stars & above</label>
+          <label><input type="radio" name="rating" /> 1 star & above</label>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <div class="filter-title">Sort By</div>
+        <div class="filter-value d-flex flex-dir-col">
+          <label><input type="radio" name="sort" /> Popularity</label>
+          <label><input type="radio" name="sort" /> Price - High to
+            Low</label>
+          <label><input type="radio" name="sort" /> Price - Low to High</label>
+          <label><input type="radio" name="sort" /> Relevance</label>
+        </div>
+      </div>
+    </aside>
+    <!-- Products -->
+    <main class="product-main">
+      <h1 class="m-1 text-center">Our Collection</h1>
+      <section class="d-flex flex-wrap flex-items-center flex-justify-center flex-content-center container-center-md">
+        <div class="card text-center m-2">
+          <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Dummy text</h2>
+            <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+              exhausting...
+            </p>
+            <a href="#" class="btn btn-atc text-center mt-0">Add To Cart</a>
+          </div>
+        </div>
+        <div class="card text-center m-2">
+          <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Dummy text</h2>
+            <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+              exhausting...
+            </p>
+            <a href="#" class="btn btn-atc text-center mt-0">Add to Cart</a>
+          </div>
+        </div>
+        <div class="card text-center m-2">
+          <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Dummy text</h2>
+            <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+              exhausting...
+            </p>
+            <a href="#" class="btn btn-atc text-center mt-0">Add to Cart</a>
+          </div>
+        </div>
+        <div class="card text-center m-2">
+          <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Dummy text</h2>
+            <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+              exhausting...
+            </p>
+            <a href="#" class="btn btn-atc text-center mt-0">Add to cart</a>
+          </div>
+        </div>
+        <div class="card text-center m-2">
+          <img src="/assets/card-img.jpg" alt="card-img" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Dummy text</h2>
+            <p class="card-desc">Now I'm shaking, drinking all this coffee..these last few weeks have been
+              exhausting...
+            </p>
+            <a href="#" class="btn btn-atc text-center mt-0">Add To cart</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CDN -->
+	<link rel="stylesheet" href="https://vivid-ui.netlify.app/css/index.css" />
+	<link rel="stylesheet" href="/css/authentication.css">
+	<title>LogOut | HitFit</title>
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav class="navbar">
+		<div class="nav  d-flex flex-justify-between flex-items-center p-1">
+			<h1 class="brandname h3">HitFit</h1>
+			<div class="nav-items d-flex flex-items-center">
+				<div class="search d-flex">
+					<input type="text" class="search-box" placeholder="Search..">
+					<button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
+				<a href="./pages/cart.html">
+					<div class="badge-container">
+						<i class="fas fa-shopping-cart fs-md"></i>
+						<span class="badge badge-icon badge-icon-atc">3</span>
+					</div>
+				</a>
+				<a href="./pages/wishlist.html">
+					<div class="badge-container">
+						<i class="fas fa-heart icon fs-md"></i>
+						<span class="badge badge-icon badge-icon-notification">3</span>
+					</div>
+				</a>
+				<a href="./pages/profile.html">
+					<div class="badge-container">
+						<i class="fa-solid fa-user icon fs-md"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Text Only Card -- component lib  -->
+	<section class="logout-container d-flex flex-items-center flex-justify-center">
+	<div class="card text-center pt-1 m-1">
+		<div class="card-body">
+			<i class="fas fa-circle-check fs-xl"></i>
+			<p class="logout-msg text-center fs-md">You have been logged out successfully!</p>
+		</p>
+		<a href="../landing.html" class="home-link fs-sm">Back to home</a>
+	</div>
+	</div>
+	</section>
+</body>
+
+</html>
